@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ========header start======= */
+/* =======navber start====== */
+.navber{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 120px;
+}
+.menu-bar{
+    display: none;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+}
+.menu-item li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.menu-item li a:hover{
+    color: blue;
+}
+/* =======navber end====== */
+
+/* =====banar start===== */
+.banar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 990px;
+    margin: 80px auto;
+}
+.banar-main{
+    width: 450px;
+}
+.banar-btn{
+    color: #fff;
+    background: #E02C6D;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+}
+.banar-image{
+    
+    position: relative;
+}
+.banar-image img{
+    width: 350px;
+}
+.back-image{
+    position: absolute;
+    top: -10px;
+}
+
+/* ========header end======= */
+
+/* =====main part===== */
+
+/* section1 online shoping side */
+
+.shoping-side-logo{
+    width: 900px;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+.shoping-side-logo img{
+    width: 80px;
+    height: 25px;
+}
+
+/* ==section2 start=== */
+
+.section-title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.s2-title{
+    font-size: 40px;
+}
+.container{
+    width: 980px;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-radius: 8px;
+}
+.products-card{
+    width: 300px;
+    height: 400px;
+    background-color: rgba(218, 215, 215, 0.788);
+    padding: 10px;
+    border-radius: 8px;
+
+    
+}
+.star{
+    color: goldenrod;
+}
+.btn-see-more{
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    color: #E02C6D;
+    margin-left: 1030px;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* ==section2 end=== */
+
+
+/* ==section3 start=== */
+.section3{
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+.s3-title{
+    font-size: 35px;
+}
+.btn-join{
+    background-color: #E02C6D;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0px;
+}
+
+
+
+/* ==section3 end=== */
+
+/* =====main end===== */
+
+
+/* ======footer====== */
+
+.footer-section{
+    width: 100%;
+    background-color: #0A0826;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0px;
+}
+.footer p{ 
+    font-size: 15px;
+    font-weight: 0;
+    margin: 20px 0px;
+
+}
+.footer-section ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+.footer-section ul li{
+    list-style: none;
+    color: #fff;
+}
+.footer-section ul li a{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 567px) {
+    .navber{
+        align-items: center;
+        gap: 80px;
+        margin: 50px 50px;
+    }
+    
+    .menu-item {
+        display: none;
+    }
+    .nav-logo{
+        
+        
+    }
+    .menu-bar{
+        display: block;
+        /* margin-right: 70px; */
+    }
+    .banar-container{
+        flex-direction: column-reverse;
+        gap: 60px;
+        width: 500px;
+    }
+    .shoping-side-logo{
+        width: 500px;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .container{
+        width: 500px;
+        grid-template-columns: 1fr;
+        
+    }
+    .products-card{
+        width: 500px;
+        height: 600px;
+    }
+    .products-card img{
+        width: 100%;
+        
+    }
+    .btn-see-more{
+        margin-left: 450px;
+    }
+    .section3{
+        flex-direction: column-reverse;
+        width: 500px;
+    }
+    .btn-join{
+        margin-left: 0px;
+        width: 150px;
+    }
+    .s3-part2{ 
+        padding: 0px 200px;
+    }
+    
+
+}
+
